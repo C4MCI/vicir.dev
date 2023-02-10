@@ -1,0 +1,6 @@
+site_name: Semih Vicir
+site_url: https://vicir.dev
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
