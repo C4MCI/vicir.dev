@@ -10,4 +10,14 @@
          <lastmod>2023-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://vicir.dev/cambot/</loc>
+         <lastmod>2023-02-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vicir.dev/playstore/</loc>
+         <lastmod>2023-02-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

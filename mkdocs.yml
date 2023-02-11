@@ -1,7 +1,10 @@
 site_name: Semih Vicir
 site_url: https://vicir.dev
 nav:
-    - Home: index.md
+    - Docs:
+      - index.md
+      - CAMBOT: cambot.md
+      - Playstore Reviews: playstore.md
     - About: about.md
 
 theme:
