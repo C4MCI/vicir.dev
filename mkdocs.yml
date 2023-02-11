@@ -10,6 +10,8 @@ theme:
     - navigation.expand
     - toc.follow
     - toc.integrate
+  icon:
+    logo: fontawesome/solid/house
   palette: 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"

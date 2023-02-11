@@ -13,7 +13,7 @@ jobs:
       - name: install dependencies
         run: pip install mkdocs mkdocs-material
       - name: build-site
-        run: mkdocs build
+        run: mkdocs gh-deploy
 
   deploy-site:
     needs: build-mkdocs
