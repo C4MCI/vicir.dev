@@ -1,14 +1,26 @@
 site_name: Semih Vicir
 site_url: https://vicir.dev
 nav:
+    - Hello: index.md
     - Docs:
-      - Hello: index.md
       - CAMBOT: cambot.md
       - Playstore Reviews: playstore.md
     - About: about.md
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/C4MCI
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/C4MCI
+    - icon: material/web
+      link: https://semihvicir.live/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/semihvicir/
+
 theme:
   name: material
+  favicon: img/favicon.ico
   features:
     - navigation.footer
     - navigation.expand
@@ -21,12 +33,19 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/lightbulb
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb-outline
         name: Switch to light mode
+
+
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg

@@ -1,17 +1,19 @@
-# Welcome to MkDocs
+# Welcome to My Project Documentations
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Here I share detailed information about my project from installation instructions to professional use tips.
 
-## Commands
+## Navigation Tab on Left
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Use the tab on left side to easily access all docs. You can also see the about page if you want know more about me.
 
-## Project layout
+## Table of Contents Are Also There
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Table of contents menu will appear after you click on any project and will follow your reading.
+
+
+## Too Bright?
+
+My fellow nocturnal friends, please use the button next to the search bar to toggle dark mode. It might be already
+optimized to your browser's theme.
+
+# Have Fun!
