@@ -41,7 +41,8 @@ This is going to be a long session that I explain all commands of CAMBOT. You mi
 
 ### Fun Commands
 If you are not Turkish, you probably won't understand these jokes about economics in Turkey. So don't mind.
-- ***kedi*** (no aliases) --> Posts a random cat photo.
+
+- ***kedi*** (no aliases) --> Posts a random cat photo.  
 - ***dolar*** (no aliases) --> Shows the USD/TRY exchange rate.
 - ***euro*** (no aliases) --> Shows the EUR/TRY exhange rate.
 - ***altın*** (no aliases --> Shows the price of 1 gr gold in Turkish Lira.
@@ -50,6 +51,7 @@ If you are not Turkish, you probably won't understand these jokes about economic
 
 ### Personal Commands
 These are the commands that I use with my friends. There are some inside jokes with these commands so don't mind if you don't understand.
+
 - ***melihtürkçe*** (aliases = [mt]) --> Plays the Melih Civan's special Turkish playlist.
 - ***semihtürkçe*** (aliases = [st]) --> Plays the Semih Vicir's special Turkish playlist.
 - ***furkansavar*** (no aliases) --> This command will only work if Furkan Toprak is online. Only use this command if you want to enrage Furkan Toprak.
