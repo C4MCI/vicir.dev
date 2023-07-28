@@ -5,6 +5,7 @@ nav:
     - Docs:
       - CAMBOT: cambot.md
       - Playstore Reviews: playstore.md
+      - BAUROV: baurov.md
     - About: about.md
 
 extra:
@@ -25,7 +26,6 @@ theme:
     - navigation.footer
     - navigation.expand
     - toc.follow
-    - toc.integrate
   icon:
     logo: fontawesome/solid/house
   palette: 
