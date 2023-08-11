@@ -6,6 +6,7 @@ nav:
       - CAMBOT: cambot.md
       - Playstore Reviews: playstore.md
       - BAUROV: baurov.md
+      - Linux Rescue Notes: linux.md
     - About: about.md
 
 extra:
