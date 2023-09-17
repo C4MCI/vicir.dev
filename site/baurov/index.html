@@ -324,6 +324,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#servo-kontrol" class="md-nav__link">
+    Servo Kontrol
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -401,6 +408,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#servo-kontrol" class="md-nav__link">
+    Servo Kontrol
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -437,6 +451,144 @@
 <ul>
 <li>baurov.local çalışmazsa 192.168.1.180'e bağlanmayı dene</li>
 </ul>
+</li>
+</ul>
+<h2 id="servo-kontrol">Servo Kontrol</h2>
+<ul>
+<li>
+<p>Pixhawk üzerindeki aux pinoutları servo ve röleler için ayrılmıştır. 6 adet aux pini bulunmaktadır ve BRD_PWM_COUNT parametresine göre giriş - çıkış veya pwm sinyali olduğuna karar verilir. Aşağıdaki tabloda detaylı olarak görebilirsiniz.</p>
+<table>
+<thead>
+<tr>
+<th>BRD_PWM_COUNT <td colspan=6>   Aux pin configuration</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>0</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+<td>GPIO</td>
+</tr>
+<tr>
+<td>4 (default)</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>GPIO</td>
+<td>GPIO</td>
+</tr>
+<tr>
+<td>6</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+<td>PWM</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Parametreler kısmından SERVOn_FUNCTION (n kısmı servo numarasıdır.) 0 yani kapalı olmalıdır. Aksi taktirde bazı fonksiyonlarla çakışma yapabilir.</p>
+</li>
+<li>
+<p>Servo kanallarının Pixhawk çıkışları ile eşleşmesini aşağıdaki tabloda görebilirsiniz.</p>
+<table>
+<thead>
+<tr>
+<th>Pixhawk Label</th>
+<th>Servo Channel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main 1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Main 2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Main 3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Main 4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Main 5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Main 6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Main 7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Main 8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Aux 1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Aux 2</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Aux 3</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Aux 4</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Aux 5</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Aux 6</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
 </li>
 </ul>
 
