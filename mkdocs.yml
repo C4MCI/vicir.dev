@@ -6,6 +6,7 @@ nav:
       - CAMBOT: cambot.md
       - Playstore Reviews: playstore.md
       - BAUROV: baurov.md
+      - Navida: navida.md
       - Linux Rescue Notes: linux.md
     - About: about.md
 
@@ -20,6 +21,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/semihvicir/
 
+extra_css:
+  - css/main.css
+
 theme:
   name: material
   favicon: img/favicon.ico
@@ -27,6 +31,8 @@ theme:
     - navigation.footer
     - navigation.expand
     - toc.follow
+    - content.code.copy
+    - content.code.annotate
   icon:
     logo: fontawesome/solid/house
   palette: 
@@ -48,5 +54,14 @@ theme:
 
 markdown_extensions:
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - codehilite:
+      guess_lang: false
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
