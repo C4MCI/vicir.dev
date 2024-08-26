@@ -21,9 +21,6 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/semihvicir/
 
-extra_css:
-  - css/main.css
-
 theme:
   name: material
   favicon: img/favicon.ico
