@@ -682,28 +682,26 @@
 </code></pre></div>
 
 <h3 id="mavros-kurulumu">Mavros Kurulumu</h3>
-<div class="codehilite"><pre><span></span><code>https://github.com/mavlink/mavros/blob/ros2/mavros/README.md
-
-```bash
+<p>https://github.com/mavlink/mavros/blob/ros2/mavros/README.md</p>
+<div class="codehilite"><pre><span></span><code>```bash
 sudo apt install ros-humble-mavros
 ros2 run mavros install_geographiclib_datasets.sh
 ```
 </code></pre></div>
 
 <h3 id="ardupilot-kurulumu">Ardupilot Kurulumu</h3>
-<div class="codehilite"><pre><span></span><code>https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
-https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html
-
-```bash
+<p>https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
+https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html</p>
+<div class="codehilite"><pre><span></span><code>```bash
 git clone --recurse-submodules https://github.com/ArduPilot/ardupilot.git
 cd ardupilot
 Tools/environment_install/install-prereqs-ubuntu.sh -y
 . ~/.profile
 ```
+</code></pre></div>
 
-Now from the ardupilot directory we just created start the simulation once to finish its setup, you can close it afterwards.
-
-```bash
+<p>Now from the ardupilot directory we just created start the simulation once to finish its setup, you can close it afterwards.</p>
+<div class="codehilite"><pre><span></span><code>```bash
 cd ArduCopter
 sim_vehicle.py --console --map -w
 ```
@@ -720,8 +718,8 @@ sim_vehicle.py --console --map -w
 </span></code></pre></div>
 </li>
 <li>
-<p>ZED SDK ve ROS Wrapper kurulumu
-    Bu adımı sadece gerçek araçta kurulum yaparken yapmamız gerekiyor, simulasyonda için gerçek zed kullanılmadığı için bu adım atlanabilir. Eğer simulasyon için kurulum yapıyorsanız <strong>src/zed_ros2_examples ve src/zed-ros2-wrapper</strong> dosyalarını localinizden silin. <strong>Ancak Gite pushlarken bu sildiğiniz dosyaları commitlemeyin, sadece diğer değiştirdiğiniz dosyaları stage edip commitleyin.</strong></p>
+<p>ZED SDK ve ROS Wrapper kurulumu.</p>
+<p>Bu adımı sadece gerçek araçta kurulum yaparken yapmamız gerekiyor, simulasyonda için gerçek zed kullanılmadığı için bu adım atlanabilir. Eğer simulasyon için kurulum yapıyorsanız <strong>src/zed_ros2_examples ve src/zed-ros2-wrapper</strong> dosyalarını localinizden silin. <strong>Ancak Gite pushlarken bu sildiğiniz dosyaları commitlemeyin, sadece diğer değiştirdiğiniz dosyaları stage edip commitleyin.</strong></p>
 <p>https://www.stereolabs.com/docs/ros2</p>
 </li>
 <li>

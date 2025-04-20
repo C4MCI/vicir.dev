@@ -7,30 +7,30 @@
     https://gazebosim.org/docs/garden/install_ubuntu/
 
 ### Mavros Kurulumu
-    https://github.com/mavlink/mavros/blob/ros2/mavros/README.md
+https://github.com/mavlink/mavros/blob/ros2/mavros/README.md
 
-    ```bash
-    sudo apt install ros-humble-mavros
-    ros2 run mavros install_geographiclib_datasets.sh
-    ```
+```bash
+sudo apt install ros-humble-mavros
+ros2 run mavros install_geographiclib_datasets.sh
+```
 
 ### Ardupilot Kurulumu
-    https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
-    https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html
+https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
+https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html
 
-    ```bash
-    git clone --recurse-submodules https://github.com/ArduPilot/ardupilot.git
-    cd ardupilot
-    Tools/environment_install/install-prereqs-ubuntu.sh -y
-    . ~/.profile
-    ```
+```bash
+git clone --recurse-submodules https://github.com/ArduPilot/ardupilot.git
+cd ardupilot
+Tools/environment_install/install-prereqs-ubuntu.sh -y
+. ~/.profile
+```
 
-    Now from the ardupilot directory we just created start the simulation once to finish its setup, you can close it afterwards.
+Now from the ardupilot directory we just created start the simulation once to finish its setup, you can close it afterwards.
 
-    ```bash
-    cd ArduCopter
-    sim_vehicle.py --console --map -w
-    ```
+```bash
+cd ArduCopter
+sim_vehicle.py --console --map -w
+```
 
 ### Colcon Workspace'i Ayağa Kaldırma
 1. Workspace'i klonla.
@@ -46,7 +46,8 @@
     git clone git@github.com:Navi-IDA/ros2-ws.git
     ```
 
-2. ZED SDK ve ROS Wrapper kurulumu
+2. ZED SDK ve ROS Wrapper kurulumu.
+
     Bu adımı sadece gerçek araçta kurulum yaparken yapmamız gerekiyor, simulasyonda için gerçek zed kullanılmadığı için bu adım atlanabilir. Eğer simulasyon için kurulum yapıyorsanız **src/zed_ros2_examples ve src/zed-ros2-wrapper** dosyalarını localinizden silin. **Ancak Gite pushlarken bu sildiğiniz dosyaları commitlemeyin, sadece diğer değiştirdiğiniz dosyaları stage edip commitleyin.**
 
     https://www.stereolabs.com/docs/ros2
