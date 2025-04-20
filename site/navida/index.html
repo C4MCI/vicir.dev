@@ -683,30 +683,21 @@
 
 <h3 id="mavros-kurulumu">Mavros Kurulumu</h3>
 <p>https://github.com/mavlink/mavros/blob/ros2/mavros/README.md</p>
-<div class="codehilite"><pre><span></span><code>```bash
-sudo apt install ros-humble-mavros
-ros2 run mavros install_geographiclib_datasets.sh
-```
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-mavros
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>mavros<span class="w"> </span>install_geographiclib_datasets.sh
+</span></code></pre></div>
 <h3 id="ardupilot-kurulumu">Ardupilot Kurulumu</h3>
 <p>https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
 https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html</p>
-<div class="codehilite"><pre><span></span><code>```bash
-git clone --recurse-submodules https://github.com/ArduPilot/ardupilot.git
-cd ardupilot
-Tools/environment_install/install-prereqs-ubuntu.sh -y
-. ~/.profile
-```
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/ArduPilot/ardupilot.git
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>ardupilot
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Tools/environment_install/install-prereqs-ubuntu.sh<span class="w"> </span>-y
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>.<span class="w"> </span>~/.profile
+</span></code></pre></div>
 <p>Now from the ardupilot directory we just created start the simulation once to finish its setup, you can close it afterwards.</p>
-<div class="codehilite"><pre><span></span><code>```bash
-cd ArduCopter
-sim_vehicle.py --console --map -w
-```
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>ArduCopter
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sim_vehicle.py<span class="w"> </span>--console<span class="w"> </span>--map<span class="w"> </span>-w
+</span></code></pre></div>
 <h3 id="colcon-workspacei-ayaga-kaldrma">Colcon Workspace'i Ayağa Kaldırma</h3>
 <ol>
 <li>
